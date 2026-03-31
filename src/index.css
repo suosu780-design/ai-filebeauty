@@ -1,0 +1,46 @@
+:root {
+  --fb-blue-deep: #0c4a6e;
+  --fb-blue-mid: #0369a1;
+  --fb-blue-bright: #0ea5e9;
+  --fb-blue-soft: #e0f2fe;
+  --fb-ink: #0f172a;
+  --fb-muted: #64748b;
+  --fb-line: #0f172a;
+  --fb-card-max: 1080px;
+  --app-surface: #e8eef5;
+  font-family: "Outfit", "Noto Sans SC", system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--fb-ink);
+  background-color: var(--app-surface);
+  background-image:
+    radial-gradient(
+      ellipse 120% 80% at 10% -20%,
+      rgb(56 189 248 / 0.12),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse 90% 60% at 100% 100%,
+      rgb(14 165 233 / 0.08),
+      transparent 45%
+    );
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--fb-blue-mid);
+}
